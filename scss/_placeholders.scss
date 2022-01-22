@@ -1,0 +1,8 @@
+%container-props {
+    @include width-params($main-container);
+    margin: 0 auto;
+
+    @media (max-width: 1200px) {
+        width: 90%;
+    }
+}

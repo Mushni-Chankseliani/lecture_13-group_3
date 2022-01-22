@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.s-1 .container, .s-2 .container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .s-1 .container, .s-2 .container {
+    width: 90%;
+  }
+}
+
+.s-1 {
+  padding: 50px 0;
+  background-color: lightcyan;
+}
+
+.s-1 .container > h1 {
+  font-size: 42px;
+  color: darkslategray;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .s-1 .container > h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .s-1 .container > h1 {
+    font-size: 25px;
+  }
+}
+
+.s-1 .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.s-1 .container .content > img {
+  width: 40%;
+  border-radius: 12px;
+}
+
+.s-1 .container .content > p {
+  width: 50%;
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 20px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.s-1 .container .content > p::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  display: inline-block;
+}
+
+.s-1 .container .content > p::first-letter {
+  font-size: 30px;
+  color: darkblue;
+}
+
+@media (max-width: 480px) {
+  .s-1 .container .content > p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .s-1 .container .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .s-1 .container .content > img, .s-1 .container .content > p {
+    width: 100%;
+  }
+  .s-1 .container .content > img {
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 20px;
+  }
+}
+
+.s-2 {
+  padding: 50px 0;
+  background-color: lightgoldenrodyellow;
+}
+
+.s-2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.s-2 .container > .block {
+  width: 300px;
+  height: 300px;
+}
+
+.s-2 .container > .block:first-child {
+  background-color: lightgreen;
+}
+
+.s-2 .container > .block:nth-child(2) {
+  background-color: lightsalmon;
+}
+
+.s-2 .container > .block:last-child {
+  background-color: lightskyblue;
+}
+
+@media (max-width: 1024px) {
+  .s-2 .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .s-2 .container > .block {
+    width: 400px;
+    height: 400px;
+  }
+  .s-2 .container > .block:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .s-2 .container > .block {
+    width: 250px;
+    height: 250px;
+  }
+}
+/*# sourceMappingURL=global.css.map */
